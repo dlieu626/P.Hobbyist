@@ -1,12 +1,12 @@
 $(function() {
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container-o', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
         pagination: '.swiper-pagination'
 
     })
-    var nestedSwiper = new Swiper('.nestedswiper-container', {
+    var nestedSwiper = new Swiper('.swiper-container-n', {
         direction: 'horizontal',
         loop: false,
         nested: true,

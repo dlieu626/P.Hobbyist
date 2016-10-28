@@ -24,7 +24,7 @@
             <div class="row" id="top">
                 <!-- need to be filled later-->
                 <div class="col-sm-6">
-                    <a>
+                    <a href="book.html">
                         <p>back</p>
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="#" data-toggle="tooltip" data-placement="right" title="after clicking, delete this book from library or history">Delete</a>
+                        <a href="#" data-toggle="popover" data-placement="right" data-content="after clicking, delete this book from booklist or history">Delete</a>
                     </div>
                 </div>
                 <div class="row" id="movie description">
@@ -61,10 +61,7 @@
                         Gryffindor Quidditch Team. Along the way he learns about the strength of his friends, the fierceness of his enemies, and the meaning of sacrifice.
                     </div>
                 </div>
-                <!--need to be filled later-->
-                <a>
                     <p style="margin-bottom:0px">Tag</p>
-                </a>
             </div>
         </div>
     </div>
@@ -119,7 +116,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
         });
     </script>
 </body>

@@ -24,7 +24,7 @@
             <div class="row" id="top">
                 <!-- need to be filled later-->
                 <div class="col-sm-6">
-                    <a>
+                    <a href="movie.html">
                         <p>back</p>
                     </a>
                 </div>
@@ -47,21 +47,18 @@
                 <h2>Movie Title</h2>
                 <div class="row" id="middle-right-button">
                     <div class="col-sm-6">
-                        <a href="#" data-toggle="tooltip" data-placement="left" title="after clicking, save this movie to the history">Watched</a>
+                        <a href="#" data-toggle="popover" data-placement="top" data-content="after clicking, save this movie to the history">Watched</a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="#" data-toggle="tooltip" data-placement="right" title="after clicking, delete this movie from library or history">Delete</a>
+                        <a href="#" data-toggle="popover" data-placement="right" data-content="after clicking, delete this movie from watchlist or history">Delete</a>
                     </div>
                 </div>
                 <div class="row" id="movie description">
                     <div class="col-sm-8">
                         Movie description.Example:A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse.
                     </div>
-                </div>
-                <!--need to be filled later-->
-                <a>
+                </div> 
                     <p style="margin-bottom:0px">Tag</p>
-                </a>
             </div>
         </div>
     </div>
@@ -114,7 +111,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
         });
     </script>
 </body>

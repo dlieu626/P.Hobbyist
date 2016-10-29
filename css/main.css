@@ -1,3 +1,8 @@
+.macro-wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
 .swiper-container {
     width: 100%;
     height: 100vh;
@@ -91,8 +96,13 @@ input[type=text] {
     margin-bottom: 20px;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 @font-face {
-font-family: "Material-Design-Icons";
-src: url("C:\Users\derrick\P.Hobbyist\P.Hobbyist\img\Materialize-Design-Icons.woff") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
-font-weight: normal;
-font-style: normal; }
+    font-family: "Material-Design-Icons";
+    src: url("C:\Users\derrick\P.Hobbyist\P.Hobbyist\img\Materialize-Design-Icons.woff") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

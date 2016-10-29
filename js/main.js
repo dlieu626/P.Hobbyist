@@ -11,7 +11,7 @@ $(function() {
         loop: false,
         nested: true,
         slidesPerView: 5,
-        spaceBetween: 30,
+        spaceBetween: 22,
         free: true,
         breakpoints: {
             767: {

@@ -26,7 +26,7 @@
 				<a class="brand-logo left"><i class="material-icons">book</i>Books</a>
 				<ul class="right">
 					<li class="active"><a href="book">Book List</a></li>
-					<li><a href="bookHistory">History</a></li>
+					<li class="active"><a href="bookHistory">History</a></li>
 				</ul>
 
 			</div>
@@ -46,9 +46,22 @@
 	</header>
 	<div class="tag-field">
 		<div class="row">
-			<div class="col s2">
 				<label>tags</label>
-			</div>
+				<div class ="button-group filter-button-group">
+					<ul id="tagrow">
+						<li class="button checked" data-filter="*"> Show all </li> 
+						<li class="button" data-filter=".action"> Action </li> 
+						<li class="button" data-filter=".comedy"> Comedy </li> 
+						<li class="button" data-filter=".crime"> Crime </li> 
+						<li class="button" data-filter=".drama"> Drama </li>
+						<li class="button" data-filter=".fantasy"> Fantasy</li> 
+						<li class="button" data-filter=".horror"> Horror </li> 
+						<li class="button" data-filter=".mystery">Mystery</li> 
+						<li class="button" data-filter=".romance"> Romance</li> 
+						<li class="button" data-filter=".sci-fi"> Sci-fi </li>  
+					</ul>
+				</div>
+
 			<div class="col s10">
                 {{#each tags}}
 				<div class="chip">{{tag-name}}</div>
@@ -57,6 +70,50 @@
 			<div class="col s12 halign-wrapper">
 				<a class="waves-effect waves-light btn-large halign" href="bookDetail/{{random}}">Just Give Me a Book</a>
 			</div>
+
+			<ul id="bookrow">
+			<div class="grid">
+				<div class="container">
+					<div class="grid-item comedy"><img src="img/1 - tnl3Ag5.jpg" alt="">
+							<h5> The Hobbit </h5>
+							<aside class="date" id="filterheadline">
+								<time datetime="2016-10">October</time>
+							</aside>
+							<p class="descriptionbook"> placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text  </p>
+					</div>
+				</div>
+					<div class="container">
+					<div class="grid-item comedy"><img src="img/8-mile-5224d756bf94d.jpg" alt="">
+							<aside class="date" id="filterheadline">
+								<time datetime="2016-10">October</time>
+							</aside>
+							<p> placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text  </p>
+					</div>
+				</div>
+
+					<div class="grid-item crime"><img src="img/8-mile-5224d756bf94d.jpg" alt="">
+						<span class="text-content"> Example here! </span> </span>
+					</div>
+					<div class="grid-item drama"><img src="img/8-mile-5224d756bf94d.jpg" alt="">
+					<aside class="date" id="filterheadline">
+							<time datetime="2016-10">October</time>
+						</aside>
+					</div>
+					<div class="grid-item fantasy"><img src="img/8-mile-5224d756bf94d.jpg" alt=""></div>
+					<div class="grid-item horror"><img src="img/8-mile-5224d756bf94d.jpg" alt=""></div>
+					<div class="grid-item mystery"><img src="img/8-mile-5224d756bf94d.jpg" alt=""></div>
+					<div class="grid-item romance"><img src="img/8-mile-5224d756bf94d.jpg" alt=""></div>
+					<div class="grid-item sci-fi"><img src="img/8-mile-5224d756bf94d.jpg" alt=""></div>
+					<div class="container">
+					<div class="grid-item comedy"><img src="img/8-mile-5224d756bf94d.jpg" alt="">
+							<aside class="date" id="filterheadline">
+								<time datetime="2016-10">October</time>
+							</aside>
+							<p> placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text  </p>
+					</div>
+				</div>
+				</div>
+			</ul>
 		</div>
 	</div>
 
@@ -107,14 +164,19 @@
 	</div>
 
 
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<!-- Bootstrap-->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<!-- Bootstrap-->	
+	<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		crossorigin="anonymous"></script>
 	<!-- materialize-->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+
+
+
+
 	<!-- javascript-->
 	<script src="js/main.js"></script>
 </body>
